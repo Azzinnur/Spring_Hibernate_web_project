@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-         pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html;"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3.org/TR/html4/loose.dtd">
@@ -11,7 +10,6 @@
 <body>
 <div align="center">
     <h1>New User</h1>
-    <br><br>
 
 <form:form action="saveNewUser" modelAttribute="user">
     <table border="1" cellpadding="5">
@@ -28,10 +26,10 @@
             <td><form:input path="email"/></td>
         </tr>
         <tr>
-            <td colspan="2"><input type="submit" value="Save New User"></td>>
+            <td colspan="2"><input type="submit" value="Save New User"></td>
         </tr>
     </table>
-</form:form>>
+</form:form>
 </div>
 </body>
 </html>

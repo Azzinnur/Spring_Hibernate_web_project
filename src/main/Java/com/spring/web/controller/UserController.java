@@ -37,11 +37,6 @@ public class UserController {
         return "redirect:/";
     }
 
-    @RequestMapping(value = "/saveUser")
-    public String saveUser(@ModelAttribute("user") User user) {
-        userService.update(user);
-        return "redirect:/";
-    }
 
     @RequestMapping(value = "/editUser")
     public String editUser(@RequestParam long id, Model model) {
@@ -55,4 +50,11 @@ public class UserController {
         userService.delete(id);
         return "redirect:/";
     }
+
+    @RequestMapping(value = "/saveUser")
+    public String saveUser(@ModelAttribute("user") User user) {
+        userService.update(user);
+        return "redirect:/";
+    }
+
 }
