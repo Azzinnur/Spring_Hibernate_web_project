@@ -14,7 +14,7 @@ Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
         <tr>
             <th>ID</th>
             <th>FirstName</th>
-            <th>SecondName</th>
+            <th>LastName</th>
             <th>E-mail</th>
             <th>Actions</th>
         </tr>
@@ -30,7 +30,7 @@ Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
                            onclick="window.location.href = 'editUser?id=${user.id}'"/>
 
                     <input type="button" value="Delete User"
-                            onclick="window.location.href = 'deleteUser?id=${user.id}'"/>
+                           onclick="window.location.href = 'deleteUser?id=${user.id}'"/>
                 </td>
             </tr>
         </c:forEach>

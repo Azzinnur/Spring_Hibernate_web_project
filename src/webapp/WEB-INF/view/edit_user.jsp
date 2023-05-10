@@ -11,7 +11,7 @@
 <div align="center">
     <h1>Edit User</h1>
 
-    <form:form action="saveUser" modelAttribute="user">
+    <form:form action="saveUser" method="patch" modelAttribute="user">
         <table border="1" cellpadding="5">
             <tr>
             <td>ID: </td>

@@ -11,7 +11,7 @@
 <div align="center">
     <h1>New User</h1>
 
-<form:form action="saveNewUser" modelAttribute="user">
+<form:form action="saveNewUser" method="put" modelAttribute="user">
     <table border="1" cellpadding="5">
         <tr>
             <td>FirstName: </td>
